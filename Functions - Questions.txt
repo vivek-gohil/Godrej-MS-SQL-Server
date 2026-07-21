@@ -1,0 +1,133 @@
+CREATE TABLE Employee
+(
+    EmpId INT PRIMARY KEY,
+    EmpName VARCHAR(50),
+    Department VARCHAR(30),
+    City VARCHAR(30),
+    Salary DECIMAL(10,2),
+    JoiningDate DATE
+);
+
+Step 2: Insert Data
+
+sql
+INSERT INTO Employee VALUES
+(101,'Rahul Sharma','IT','Mumbai',65000,'2020-01-15'),
+(102,'Priya Patel','HR','Pune',55000,'2019-05-10'),
+(103,'Amit Kumar','Finance','Delhi',70000,'2018-08-20'),
+(104,'Neha Singh','IT','Mumbai',72000,'2021-02-18'),
+(105,'Karan Shah','Sales','Ahmedabad',48000,'2022-07-12'),
+(106,'Sneha Joshi','HR','Nagpur',53000,'2023-01-25'),
+(107,'Rohan Desai','Sales','Surat',60000,'2021-10-15'),
+(108,'Anjali Verma','Finance','Pune',68000,'2017-11-05'),
+(109,'Vikas Mehta','IT','Delhi',75000,'2016-04-30'),
+(110,'Pooja Nair','HR','Mumbai',57000,'2024-03-01');
+  
+String Functions 
+
+1. Display all employee names in uppercase.
+2. Display all employee names in lowercase.
+3. Find the length of each employee's name.
+4. Display the first 5 characters of each employee's name.
+5. Display the last 4 characters of each employee's name.
+6. Replace "Sharma" with "Patil" wherever it appears.
+7. Concatenate employee name and city.
+8. Find the position of the letter 'a' in each employee's name.
+9. Reverse every employee's name.
+10. Display employee names after removing leading and trailing spaces (use a sample string).
+
+
+
+Date Functions
+
+1. Display the current date and time.
+2. Display only the current year.
+3. Display only the current month.
+4. Display only the current day.
+5. Display the joining year of each employee.
+6. Display the month name of each employee's joining date.
+7. Add 6 months to every joining date.
+8. Add 30 days to every joining date.
+9. Find how many years each employee has worked.
+10. Display the last day of the current month.
+
+Mathematical Functions
+
+1. Display the absolute value of -250.
+2. Round 1234.5678 to 2 decimal places.
+3. Display the ceiling value of 45.25.
+4. Display the floor value of 45.99.
+5. Calculate 5 raised to the power of 3.
+6. Find the square root of 625.
+7. Generate a random number.
+8. Display the value of PI.
+9. Round every employee's salary to the nearest thousand.
+10. Increase every employee's salary by 10% and display the result.
+
+Ranking Functions
+
+1. Assign row numbers based on salary (highest to lowest).
+2. Display the rank of employees based on salary.
+3. Display the dense rank of employees based on salary.
+4. Divide employees into 3 salary groups using   NTILE(3)  .
+5. Display the highest-paid employee in each department using   ROW_NUMBER()  .
+6. Display the top 3 highest-paid employees.
+7. Display the second highest-paid employee.
+8. Display employees having the same salary rank.
+9. Display department-wise ranking of employees.
+10. Display city-wise ranking based on salary.
+
+System Functions
+
+1. Display the SQL Server version.
+2. Display the current database name.
+3. Display the current login name.
+4. Display the computer (host) name.
+5. Display the application name.
+6. Generate a new GUID.
+7. Replace   NULL   with 'Not Available'   using   ISNULL()  .
+8. Replace multiple   NULL   values using   COALESCE()  .
+9. Display the current system date using   GETDATE()  .
+10. Display the current system date and time using   SYSDATETIME()  .
+
+Mixed Functions
+
+1. Display employee name in uppercase along with salary.
+2. Display employee name and years of experience.
+3. Display employee name and month of joining.
+4. Display employee name and salary rank.
+5. Display employee name and salary after a 15% increment.
+6. Display employee name, city, and total number of characters in the city name.
+7. Display employee names in reverse order of their names.
+8. Display employees who joined before 2020.
+9. Display employees whose names start with 'R'.
+10. Display employees whose names end with 'a'.
+11. Display employees whose salaries are greater than the average salary.
+12. Display the top 5 highest-paid employees.
+13. Display department-wise average salary.
+14. Display city-wise employee count.
+15. Display employees who joined in January.
+16. Display employees whose salary is between ₹50,000 and ₹70,000.
+17. Display employees ordered by joining date (oldest first).
+18. Display the employee with the longest name.
+19. Display the difference in days between today and each employee's joining date.
+20. Display a report showing employee name, department, city, salary, joining year, and salary rank.
+
+Bonus Challenge
+
+Create a single query that displays:
+
+* Employee Name (UPPERCASE)
+* Department
+* City
+* Joining Year
+* Years of Experience
+* Monthly Salary (  Salary / 12  )
+* Annual Salary
+* Salary Rank
+* Dense Rank
+* Current Date
+* Random Number
+
+Use as many SQL Server built-in functions as possible in one query.
+
